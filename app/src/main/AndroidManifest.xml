@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.parteek.dugo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name=".fcm.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Adminstrator"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".Notification"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".UserNotification"
+            android:theme="@style/Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBMT95IA9pMtC-iMlRbswKldAN5LFfy_6A" />
+
+        <activity
+            android:name=".Donor_details"
+            android:theme="@style/Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".FacebookLogin"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>

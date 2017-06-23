@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home1"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/finduser"
+            android:title="Find Donor" />
+        <item
+            android:id="@+id/donordet"
+            android:icon="@drawable/userdetails"
+            android:title="Donor Details"/>
+        <item
+            android:id="@+id/pend00"
+            android:icon="@drawable/smartphone"
+            android:title="Pending Requestes"/>
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about"
+            android:title="About"/>
+    </group>
+
+    <item android:title="User">
+        <menu>
+            <item
+                android:id="@+id/edit_profile"
+                android:icon="@drawable/user1"
+                android:title="Edit Profile"/>
+             <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

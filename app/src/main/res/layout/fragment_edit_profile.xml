@@ -1,0 +1,127 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color"
+    tools:context="com.android.parteek.dugo.EditProfile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:paddingLeft="24dp"
+        android:background="@color/color"
+        android:paddingRight="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/col"
+            android:text="Update Profile"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+        <!--<view-->
+        <!--android:layout_width="140dp"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@color/col"/>-->
+
+        <!-- Email Label -->
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@color/col"-->
+        <!--android:layout_height="5dp"/>-->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/update_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorq"
+                android:inputType="textPersonName"
+                android:hint="Enter Your Name"
+                android:textColorHint="@color/colorq"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/update_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorq"
+                android:inputType="phone"
+                android:hint="Enter Your Phone"
+                android:textColorHint="@color/colorq"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/update_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorq"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Your Email"
+                android:textColorHint="@color/colorq"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_city"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">>
+        </Spinner>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_blood"
+            android:layout_marginTop="8dp"
+            android:dropDownWidth="50dp"
+            android:layout_marginBottom="8dp">
+        </Spinner>
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/input_butn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Update"/>
+
+        <TextView android:id="@+id/link_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Want to Change Password"
+            android:gravity="center"
+            android:textSize="16dip"/>
+        <View
+            android:layout_width="185dp"
+            android:layout_height="1dp"
+            android:background="@color/col1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
